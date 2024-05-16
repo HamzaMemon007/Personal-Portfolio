@@ -28,8 +28,27 @@ main .container1{
     width: 50%px;
     border-right: 5px solid  rgb(255, 252, 69);
     padding: 0 1em 0 1em;
+    margin: 1em;
+    a{
+        text-decoration: none;
+        padding: 1em;
+        border-radius: 30px;
+        font-weight: bolder;
+        text-transform: uppercase;
+        font-size: 1em;
+        color: white;
+        transition: 0.5s;
+        border: 2px solid rgb(255, 252, 69);
+    }
     
- 
+    
+    
+}
+.container1 .leftside a:hover{
+    background-color: rgb(255, 252, 69) ;
+    color: black;
+    
+
 }
 
 .container1 .rightside{
@@ -38,7 +57,7 @@ main .container1{
         width: 400px;
         height: 400px;
         border-radius: 100%;
-        margin-right: 120px;
+        margin-right: 90px;
         margin-left: 50px;
         border: 5px solid  rgb(255, 252, 69);
     }
