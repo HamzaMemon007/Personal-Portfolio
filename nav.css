@@ -39,6 +39,7 @@ nav a:hover span {
 }
 
 header {
+    padding: 20px;
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -50,17 +51,21 @@ header {
 }
 
 .brand-name {
-    justify-content: left;
+    display: flex;
     color: #ffffff;
-    padding: 0 0 0 10px;
-    margin: 0;
-    font-size: 22px;
+    font-size: 16px;
     font-family: "Monoton", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-stretch: expanded;
-    p img{
-        width: 70px;
+    justify-content: center;
+    align-items: center;
+    span{
+        padding-top: 10px;
+    }
+    img{
+        width: 40px;
+        height: 40px;
         margin-bottom: -20px;
         margin-top: -13px;
         /* color: yellow; */
