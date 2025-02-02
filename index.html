@@ -4,87 +4,225 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Website Developer | Hamza Memon</title>
     <link rel="stylesheet" href="./nav.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="shortcut icon" href="./assets/finl-logo.png" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./loader.css">
+
+    <!-- Seo Tags -->
+
+    <meta name="author" content="Hamza Memon">
+    <meta name="robots" content="index, follow">
+    <meta name="description"
+        content="Hamza Memon - A self-taught Front-End Developer from Pakistan specializing in HTML, CSS, JavaScript, and responsive web design. Currently learning backend development with Node.js and React.js.">
+    <meta name="keywords"
+        content="Hamza Memon, Front-End Developer, Web Developer, HTML, CSS, JavaScript, React.js, Tailwind, Bootstrap, API Integration, Portfolio">
+    <meta name="theme-color" content="#000000">
+
+    <meta property="og:title" content="Hamza Memon - Front-End Developer">
+    <meta property="og:description"
+        content="I build clean and responsive websites using HTML, CSS, JavaScript, and React.js.">
+    <meta property="og:image" content="https://hamzamemon.online/assets/hamza-memon-profile-picture-wto-bg.png">
+    <meta property="og:url" content="https://hamzamemon.online">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hamza Memon - Front-End Developer">
+    <meta name="twitter:description" content="I specialize in HTML, CSS, JavaScript, and responsive web design.">
+    <meta name="twitter:image" content="https://hamzamemon.online/assets/hamza-memon-profile-picture-wto-bg.png">
+    <link rel="canonical" href="https://hamzamemon.online">
+
+
 </head>
 
 <body>
+    <div class="spinnerContainer">
+        <div class="spinner"></div>
+    </div>
     <div class="main-body">
 
         <header>
-            <div class="brand-name">
-
-                <img src="./assets/finl-logo.png" alt="logo">
+            <div class="brand">
+                <img src="./assets/finl-logo.png" alt="Logo">
                 <span>Hamza Memon</span>
-
             </div>
+
             <nav>
-                <a href="#">Introduction<span></span></a>
-                <a href="#">Projects<span></span></a>
-                <a href="#">Services<span></span></a>
-                <a href="#">Contact<span></span></a>
+                <div class="menu-toggle">
+                    <i class="bi bi-list" id="menu-icon"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#">Projects<span></span></a></li>
+                    <li><a href="#">Services<span></span></a></li>
+                    <li><a href="#">Contact<span></span></a></li>
+                </ul>
             </nav>
         </header>
-        <main>
-        <!-- Section 1 Main Intro  -->
-            <section class="section-1">
-                <div>
 
+        <main>
+            <!-- First Hero Section -->
+            <section class="hero">
+                <div class="hero-container">
+                    <div class="hero-content">
+                        <h2>Hello There, This is <br>
+                            <span class="hero-name">Hamza Memon</span> <br>
+                            A <strong id="heroText">Front-End Developer</strong><br>
+                            From Pakistan
+                        </h2>
+                        <div class="hero-social">
+                            <a href="#" class="hero-btn"><i class="bi bi-linkedin"></i> Let's Connect</a>
+                            <a href="#" class="social-icon"><i class="bi bi-github"></i></a>
+                            <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="./assets/hamza-memon-profile-picture-wto-bg.png" draggable="false" alt="Hamza Memon">
+                    </div>
                 </div>
             </section>
-            <!-- section 1 Main Intrduction -->
-            <div class="container1">
-                <h2 class="Heading">Introduction</h2>
-                <div>
 
-                    <div class="leftside">
-                        <p>
-                            Welcome to my portfolio! I'm a dedicated website developer with a passion for crafting visually
-                            stunning and user-friendly websites. Specializing in HTML and CSS, I bring simplicity and
-                            elegance
-                            to every project. Dive in and explore my creations, where clean code meets captivating design.
-                            Let's
-                            build something remarkable together.
-                        </p>
-                        <div class="button-hire">
-                            <a href="#">Hire me</a>
-                        </div>
-                        
-                    </div>
-                    <div class="rightside">
-                        <img src="./assets/icon.jpg" alt="">
-                    </div>
+            <!-- Second Section About ME -->
+            <section class="about-me">
+                <div class="about-container">
+                    <h1>About Me</h1>
+                    <p>Hey! I’m <span>Hamza Memon</span>, a self-taught <strong>Front-End Developer</strong> from
+                        Pakistan. I love building clean and responsive websites using <strong>HTML, CSS, and
+                            JavaScript</strong>. Currently, I’m expanding my skills by learning <strong>backend
+                            development</strong> and soon diving into <strong>React.js</strong>.</p>
+                    <p>I believe in <em>learning by doing</em> and constantly improving. Every project I work on is a
+                        step forward in my journey to becoming a <strong>full-stack developer</strong>.</p>
+                    <a href="#contact" class="contact-btn">Let's Connect</a>
                 </div>
-            </div>
+            </section>
+
 
             <!-- Section 2 Main Portfolio Projects  -->
 
-            <div class="container2">
-                <h2 class="Heading">Projects</h2>
-                <div class="cards">
-                    <div class="product">
-                        <img src="./assets/Capture.PNG" alt="Product 2">
-                        <h1>E-Comerce store</h1>
-                        <a href="https://hamzamemon007.github.io/E-Commerce-Website/" target="_blank"><button>Visit</button></a>
+            <div class="projects-section">
+                <h2 class="projects-heading">Projects</h2>
+                <div class="projects-container">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <img src="./assets/Capture.PNG" alt="E-Commerce Store">
+                        <h3>E-Commerce Store</h3>
+                        <a href="https://hamzamemon007.github.io/E-Commerce-Website/" target="_blank">
+                            <button class="project-btn">Visit</button>
+                        </a>
                     </div>
-                    <div class="product">
-                        <img src="./assets/Capture.PNG" alt="Product 2">
-                        <h1>Recipe Website</h1>
-                        <button onclick="alert('Welcome to my website')">Visit</button>
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <img src="./assets/Capture.PNG" alt="Recipe Website">
+                        <h3>Recipe Website</h3>
+                        <button class="project-btn" onclick="alert('Welcome to my website')">Visit</button>
                     </div>
-                    <div class="product">
-                        <img src="./assets/Capture.PNG" alt="Product 2">
-                        <h1>My Portfolio</h1>
-                        <button onclick="alert('Welcome to my website')">Visit</button>
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <img src="./assets/Capture.PNG" alt="My Portfolio">
+                        <h3>My Portfolio</h3>
+                        <button class="project-btn" onclick="alert('Welcome to my website')">Visit</button>
+                    </div>
+                    <!-- Project 4 -->
+                    <div class="project-card">
+                        <img src="./assets/Capture.PNG" alt="Landing Page">
+                        <h3>Landing Page</h3>
+                        <button class="project-btn">Visit</button>
+                    </div>
+                    <!-- Project 5 -->
+                    <div class="project-card">
+                        <img src="./assets/Capture.PNG" alt="Dashboard UI">
+                        <h3>Dashboard UI</h3>
+                        <button class="project-btn">Visit</button>
+                    </div>
+                    <!-- GitHub Themed Card -->
+                    <div class="project-card github-card">
+                        <i class="bi bi-github github-icon"></i>
+                        <h3>See More Projects</h3>
+                        <p>Check out my GitHub for more cool projects!</p>
+                        <a href="https://github.com/hamzamemon007" target="_blank">
+                            <button class="github-btn">Visit GitHub</button>
+                        </a>
                     </div>
                 </div>
             </div>
+
+            <section id="contact">
+                <div class="contact-container">
+                    <h2>Happy to Connect With You!</h2>
+                    <p>Feel free to reach out to me for collaboration, questions, or just a friendly chat.</p>
+                    <div class="email-section">
+                        <p>Click the button to copy my email:</p>
+                        <div class="email-container">
+                            <span class="email" id="email">hamzamemon@example.com</span>
+                            <button class="copy-btn" id="copyBtn" onclick="copyEmail()">Copy Email</button>
+                        </div>
+                    </div>
+
+                    <div class="socials">
+                        <a href="https://www.linkedin.com/in/hamza-memon/" target="_blank" class="social-btn linkedin">
+                            <i class="bi bi-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="https://github.com/hamzamemon" target="_blank" class="social-btn github">
+                            <i class="bi bi-github"></i> GitHub
+                        </a>
+                        <a href="https://www.instagram.com/hamzamemon/" target="_blank" class="social-btn instagram">
+                            <i class="bi bi-instagram"></i> Instagram
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+
         </main>
 
+        <footer>
+            <div class="footer-container">
+                <p>&copy; <span id="currentYear"></span> Hamza Memon. All Rights Reserved.</p>
+            </div>
+        </footer>
+
     </div>
+
+    <script src="./loader.js"></script>
+    <script src="./typing.js"></script>
+    <script src="script.js"></script>
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Hamza Memon",
+          "url": "https://hamzamemon.online",
+          "image": "https://hamzamemon.online/assets/hamza-memon-profile-picture-wto-bg.png",
+          "jobTitle": "Front-End Developer",
+          "description": "A self-taught Front-End Developer from Pakistan specializing in HTML, CSS, JavaScript, and responsive web design. Currently learning backend development with Node.js and React.js.",
+          "email": "me@hamzamemon.online",
+          "alumniOf": "Self-Taught",
+          "sameAs": [
+            "https://github.com/hamzamemon007",
+            "https://www.linkedin.com/in/hamza-memon-2b4b84341/"
+          ],
+          "knowsAbout": [
+            "HTML", "CSS", "JavaScript", "React.js", "Tailwind", "Bootstrap", "API Integration",
+            "Express.js", "Node.js", "MongoDB", "PostgreSQL", "Prisma", "Next.js", "WordPress", "Chatbots"
+          ],
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Freelance",
+            "url": "https://hamzamemon.online"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "me@hamzamemon.online",
+            "contactType": "customer support"
+          }
+        }
+        </script>
+        
 </body>
 
 </html>
